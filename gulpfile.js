@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const svgo = require('gulp-svgo');
  
-gulp.task('images', () => {
+gulp.task('pictos', () => {
  
     return gulp.src('src/*')
         .pipe(svgo())

@@ -53,7 +53,7 @@ function gotData() {
         let img = createImg("../dist/"+picto.path, picto.label);
         img.class('pictogram layer'+picto.layer);
         img.parent(setId);
-        let tagContainer = createDiv('<h4>Tags</h4>');
+        let tagContainer = createDiv('<h4>tags</h4>');
         tagContainer.parent(setId);
         tagContainer.class('tags');
         let tags = picto.tags;
@@ -63,7 +63,7 @@ function gotData() {
             t.class('tag');
             t.parent(tagContainer);
         }
-       let catContainer = createDiv('<h4>Categories</h4>');
+       let catContainer = createDiv('<h4>categories</h4>');
        catContainer.parent(setId);
        catContainer.class('tags');
        let cats = picto.category;

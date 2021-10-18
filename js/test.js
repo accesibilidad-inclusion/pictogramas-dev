@@ -39,8 +39,11 @@ function gotData() {
     document.getElementById('container').innerHTML = "";
     let mainTitle = createElement('h1', data.title);
     let mainP = createElement('p', data.description);
-    mainTitle.parent('container');
-    mainP.parent('container');
+    let head = createDiv();
+    head.id('head');
+    head.parent('container');
+    mainTitle.parent('head');
+    mainP.parent('head');
     for (let key in data.properties.pictos) {
         let picto = data.properties.pictos[key];
         let pictoDiv = createDiv();
